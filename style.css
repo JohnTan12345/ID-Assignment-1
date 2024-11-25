@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 html,body {
     margin: 0%;
     height: 100%;
@@ -22,16 +26,27 @@ html,body {
     padding: 0%;
 }
 
+#navbar strong {
+    color: white;
+
+}
+
 #navbar button {
     border: none;
     height: 50px;
     width: 125px;
     transition-duration: 0.25s;
-    background-color: white;
+    background-color: black;
 }
 
 #navbar button:hover {
     background-color: grey;
 }
 
-#logo {}
+#logo {
+    height: 50px;
+    width: 125px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
