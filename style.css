@@ -11,8 +11,8 @@ html,body {
 
 main {
     width: 100%;
-    height: 200%;
     background-color: black;
+    padding-bottom: 50px;
 }
 
 /* Navbar */
@@ -60,7 +60,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: grey;
-    height: 50%;
+    height: 100%;
     width: 100%;
 }
 
@@ -84,9 +84,15 @@ main {
     font-size: x-large;
 }
 
+#content > div {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 #content button {
-    width: 125px;
     height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color:rgb(40, 40, 40);
     border: none;
     border-radius: 10px;
@@ -130,6 +136,7 @@ main {
 #populargames {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .game {
@@ -159,8 +166,13 @@ main {
     font-size: large !important;
 }
 
-.about {
-    
+#about {
+    display: flex;
+    justify-content: center;
+}
+
+#about * {
+    margin: 0px;
 }
 
 /* Sticky navbar */
