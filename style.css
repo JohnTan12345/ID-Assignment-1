@@ -1,5 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 html,body {
@@ -30,11 +31,6 @@ main {
     text-align: right;
     margin: 0%;
     padding: 0%;
-}
-
-#navbar strong {
-    color: white;
-
 }
 
 #navbar button {
@@ -74,5 +70,30 @@ main {
     width: 50%;
     height: 200px;
     background-color: black;
-    color: white;
+}
+
+/* Main */
+#main {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#main *{
+    color: black;
+    font-size: x-large;
+}
+
+.games {
+
+}
+
+.about {
+    
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
