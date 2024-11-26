@@ -73,19 +73,18 @@ main {
     background-color: black;
 }
 
-/* Main */
-#main {
-    padding-top: 50px;
+/* Content */
+#content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#main *{
+#content *{
     font-size: x-large;
 }
 
-#main button {
+#content button {
     width: 125px;
     height: 50px;
     background-color:rgb(40, 40, 40);
@@ -94,16 +93,16 @@ main {
     transition-duration: 0.25s;
 }
 
-#main button:hover {
+#content button:hover {
     background-color: rgb(80, 80, 80);
 }
 
-#main a {
+#content a {
     display: inline-block;
     position: relative;
 }
 
-#main a::after {
+#content a::after {
     content: '';
     position: absolute;
     width: 90%;
@@ -116,9 +115,14 @@ main {
     transition: transform 0.25s ease-out;
 }
 
-#main a:hover::after {
+#content a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+/* Section Titles */
+.sectiontitle {
+    margin: 50px;
 }
 
 /* Popular Games */
