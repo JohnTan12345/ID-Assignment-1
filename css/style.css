@@ -187,6 +187,7 @@ footer, footer > div {
 }
 
 footer {
+    position: relative;
     box-sizing: border-box;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -223,4 +224,10 @@ footer strong {
 #socialmedia-icons img{
     height: 50px;
     width: 50px;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
 }
