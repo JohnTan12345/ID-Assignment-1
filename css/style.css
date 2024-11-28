@@ -168,6 +168,25 @@ main {
     font-size: large !important;
 }
 
+.ratiobar {
+    width: 80%;
+    height: 10px;
+    display: flex;
+}
+
+.likes, .dislikes {
+    height: 100%;
+}
+
+.likes {
+    background-color: rgb(75, 247, 75);
+}
+
+.dislikes {
+    background-color: rgb(138, 1, 1);
+}
+/* about */
+
 #about {
     display: flex;
     flex-direction: column;

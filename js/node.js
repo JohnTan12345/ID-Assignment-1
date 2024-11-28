@@ -14,12 +14,13 @@ function creategameinfo() {
         let game
 
         /* Check if there is an available game, else default */
-        gameslist[i] != undefined ? game = gameslist[i] : game = {"name": "default", "active": 0, "likes": 0, "dislikes": 0}
+        gameslist[i] != undefined ? game = gameslist[i] : game = {"name": "default", "active": 0, "likes": 1, "dislikes": 1}
 
         let name = game.name
         let active = game.active
         let likes = game.likes
-        let total = game.likes + game.dislikes
+        let dislikes = game.dislikes
+        let total = likes + dislikes
 
         let background = document.createElement("div")
         displaygames.appendChild(background)
@@ -40,8 +41,22 @@ function creategameinfo() {
         background.appendChild(activeplayers)
 
         let ratio = document.createElement("strong")
-        ratio.innerHTML = `${likes}:${total}`
+        ratio.innerHTML = `${likes} Likes`
         background.appendChild(ratio)
+
+        let ratiobar = document.createElement("div")
+        background.appendChild(ratiobar)
+        ratiobar.className = "ratiobar"
+
+        let likesbar = document.createElement("div")
+        ratiobar.appendChild(likesbar)
+        likesbar.style.width = ((likes / total) * 100) + "%"
+        likesbar.className = "likes"
+
+        let dislikesbar = document.createElement("div")
+        ratiobar.appendChild(dislikesbar)
+        dislikesbar.style.width = ((dislikes/total) * 100) + "%"
+        dislikesbar.className = "dislikes"
     }
 
 }
