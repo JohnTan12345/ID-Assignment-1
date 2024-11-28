@@ -11,7 +11,7 @@ html,body {
 
 main {
     width: 100%;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     padding-bottom: 50px;
 }
 
@@ -173,6 +173,54 @@ main {
 
 #about * {
     margin: 0px;
+}
+
+/*Footer */
+
+footer, footer > div {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+}
+
+footer {
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 50px;
+}
+
+footer > div {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer strong {
+    font-size: larger !important;
+}
+
+#quicklinks {
+    align-items: end;
+}
+
+#socialmedia{
+    align-items: start;
+}
+
+#socialmedia > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#socialmedia-icons img{
+    height: 50px;
+    width: 50px;
 }
 
 /* Sticky navbar */
