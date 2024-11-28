@@ -22,6 +22,8 @@ main {
     background-color: black;
     height: 50px;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 #navbar li {
     display: inline-block;
@@ -133,7 +135,7 @@ main {
 
 /* Popular Games */
 
-#populargames {
+#displaygames {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -221,11 +223,4 @@ footer strong {
 #socialmedia-icons img{
     height: 50px;
     width: 50px;
-}
-
-/* Sticky navbar */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
