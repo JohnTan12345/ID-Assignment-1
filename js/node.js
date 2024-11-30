@@ -1,7 +1,20 @@
 const displaygames = document.getElementById("displaygames");
 
-function getgames() {
+function game(name, active, likes, dislikes) {
+    this.gamename = name
+    this.activeplayers = active
+    this.currentlikes = likes
+    this.currentdislikes = dislikes
+}
+
+function getgames() /* Normally is a function that gets the games from somewhere */ {
+    let textfile = []
     let gameslist = []
+    textfile.forEach(element => {
+        element = element.split(",")
+        let fetchedgame = new game(element[0], element[1], element[2], element[3])
+        gameslist.push(fetchedgame)
+    });
     return gameslist
 }
 
@@ -11,15 +24,15 @@ function creategameinfo() {
 
     for (i = 0; i < displayamount; i++) {
 
-        let game
+        let selectedgame
 
         /* Check if there is an available game, else default */
-        gameslist[i] != undefined ? game = gameslist[i] : game = {"name": "default", "active": 0, "likes": 1, "dislikes": 1}
+        gameslist[i] != undefined ? selectedgame = gameslist[i] : selectedgame = new game("default", 1, 1, 1)
 
-        let name = game.name
-        let active = game.active
-        let likes = game.likes
-        let dislikes = game.dislikes
+        let name = selectedgame.gamename
+        let active = selectedgame.activeplayers
+        let likes = selectedgame.currentlikes
+        let dislikes = selectedgame.currentdislikes
         let total = likes + dislikes
 
         let background = document.createElement("div")
@@ -37,7 +50,7 @@ function creategameinfo() {
         background.appendChild(gamename)
 
         let activeplayers = document.createElement("strong")
-        activeplayers.innerHTML = active
+        activeplayers.innerHTML = `${active} Players Active`
         background.appendChild(activeplayers)
 
         let ratio = document.createElement("strong")
