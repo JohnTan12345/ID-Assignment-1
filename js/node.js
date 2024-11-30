@@ -8,7 +8,7 @@ function game(name, active, likes, dislikes) {
 }
 
 function getgames() /* Normally is a function that gets the games from somewhere */ {
-    let textfile = []
+    let textfile = [] /* The games from somewhere */
     let gameslist = []
     textfile.forEach(element => {
         element = element.split(",")
