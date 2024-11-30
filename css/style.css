@@ -49,11 +49,11 @@ main {
 }
 
 #logo {
-    height: 50px;
-    width: 125px;
+    height: 48px;
+    width: 48px;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 1px;
+    top: 1px;
 }
 
 /* Page Highlight */
@@ -170,7 +170,10 @@ main {
 
 #about {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 40px;
 }
 
 #about * {
@@ -219,11 +222,12 @@ footer strong {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px
 }
 
 #socialmedia-icons img{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 #copyright {
