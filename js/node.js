@@ -19,8 +19,8 @@ function getgames() /* Normally is a function that gets the games from somewhere
 }
 
 function creategameinfo() {
-    let displayamount = displaygames.dataset.displayamount > 0 ? displaygames.dataset.displayamount : gameslist.length
     let gameslist = getgames()
+    let displayamount = displaygames.dataset.displayamount > 0 ? displaygames.dataset.displayamount : gameslist.length
 
     for (i = 0; i < displayamount; i++) {
 
