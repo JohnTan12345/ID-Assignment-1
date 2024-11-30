@@ -3,6 +3,7 @@
     <title>Assignment 1</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
@@ -17,18 +18,18 @@
             <div id="displaygames" data-displayamount="5">
             </div>
             
-            <a href="games.html"><button>Find More</button></a>
+            <button onclick="window.location.href='games.html'">Find More</button>
             
             <strong class="sectiontitle">About Us</strong>
             
             <div class="about">
-                <img id="fulllogo" src="img/logos/logo.png" alt="Logo">
+                <img class="fulllogo" src="img/logos/logo.png" alt="Logo">
                 <p>Here in Chill Studio, we strive to make games that everyone can enjoy, ranging from kid-friendly games to RPG games. We consist of teams full of developers working together to create the games we proudly show on this website. We also collaborate with other developers to help maintain their game while they hold full control of the title.</p>
             </div>
-            <a href="aboutus.html"><button>Learn More</button></a>
+            <button onclick="window.location.href='aboutus.html'">Learn More</button>
 
             <strong class="sectiontitle">Want us to maintain and update your game?</strong>
-            <a href="contactus.html"><button>Contact Us</button></a>
+            <button onclick="window.location.href='contactus.html'">Contact Us</button>
 
         </div>
 
@@ -56,14 +57,14 @@
         <p id="copyright">&#169; 2024 Chill Studio</p>
 
     </footer>
-
-    <navbar id="navbar">
+    
+    <nav id="navbar">
         <a href="index.html"><img id="logo" src="img/logos/homelogo.png" alt="SimplifiedLogo"></a>
-        <a href="aboutus.html"><button><strong>About Us</strong></button></a>
-        <a href="games.html"><button><strong>Games</strong></button></a>
-        <a href="contactus.html"><button><strong>Contact Us</strong></button></a>
-        <a href="index.html"><button><strong>Home</strong></button></a>
-    </navbar>
+        <button onclick="window.location.href='aboutus.html'"><strong>About Us</strong></button>
+        <button onclick="window.location.href='games.html'"><strong>Games</strong></button>
+        <button onclick="window.location.href='contactus.html'"><strong>Contact Us</strong></button>
+        <button onclick="window.location.href='index.html'"><strong>Home</strong></button>
+    </nav>
 
     <script src="js/node.js"></script>
 </body>
