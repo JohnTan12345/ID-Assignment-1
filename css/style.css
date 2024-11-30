@@ -125,7 +125,7 @@ main {
     margin: 50px;
 }
 
-/* Popular Games */
+/* Games Display */
 
 #displaygames {
     display: flex;
@@ -177,9 +177,10 @@ main {
 .dislikes {
     background-color: rgb(138, 1, 1);
 }
+
 /* about */
 
-#about {
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,8 +188,42 @@ main {
     gap: 40px;
 }
 
-#about * {
+.about * {
     margin: 0px;
+    text-align: center;
+}
+
+/* Reviews */
+
+#reviews, #reviews > div {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#reviews {
+    width: 100%;
+    padding: 10px;
+    margin: 20px;
+}
+#reviews > div {
+    width: 90%;
+}
+
+#review1, #review2 {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#review1 {
+    align-items: start;
+}
+#review2 {
+    align-items: end;
+}
+
+#review2 > p{
+    text-align: right;
 }
 
 /*Footer */
