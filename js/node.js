@@ -8,11 +8,24 @@ function game(name, active, likes, dislikes) {
 }
 
 function getgames() /* Normally is a function that gets the games from somewhere */ {
-    let textfile = [] /* The games from somewhere */
+    let textfile = [
+        "Jujutsu Battlegrounds, 340303, 203355, 5599",
+        "Kitchen Chaos, 299444, 214323, 2945",
+        "Banana Adventures, 149224, 79455, 4343",
+        "Fishing Simulator, 90442, 65443, 3001",
+        "Driveby, 89355, 68555, 3344",
+        "Comet Protocol, 59444, 34344, 3433",
+        "Pizza Party, 40339, 43443, 2394",
+        "Crowned Force, 35699, 13432, 1002",
+        "711 Simulator, 12044, 7023, 102",
+        "Maphin, 5233, 3269, 129",
+        "Powdered Real, 402, 121, 7",
+        "Fixing Good, 295, 69, 1"
+    ] /* The games from somewhere */
     let gameslist = []
     textfile.forEach(element => {
         element = element.split(",")
-        let fetchedgame = new game(element[0], element[1], element[2], element[3])
+        let fetchedgame = new game(element[0], Number(element[1]), Number(element[2]), Number(element[3]))
         gameslist.push(fetchedgame)
     });
     return gameslist
