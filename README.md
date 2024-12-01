@@ -19,7 +19,7 @@ Wireframe: https://www.figma.com/design/USrnL1NyQ9xM1MWw50I9EN/Asg-1-ID?node-id=
     - easier page Navigation
 - Dynamic resizing
     - automatically resizes itself for compatibility with mobile devices
-- Button animation
+- Button colour change on hover
     - to make the website feel alive
 - Top 5 popular games showcase with their individual statistics at the front page
     - automatically rankes the popular games based on likes and player count
