@@ -97,30 +97,6 @@ main {
 #content button:hover {
     background-color: rgb(80, 80, 80);
 }
-
-#content a {
-    display: inline-block;
-    position: relative;
-}
-
-#content a::after {
-    content: '';
-    position: absolute;
-    width: 90%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 10px;
-    left: 5%;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-#content a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
 /* Section Titles */
 .sectiontitle {
     margin: 50px;
@@ -301,6 +277,13 @@ footer strong {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px
+}
+
+#socialmedia-icons {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
     gap: 10px
 }
 
