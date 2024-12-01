@@ -54,6 +54,7 @@ Wireframe:
 ### Content
 
 - About us, the reviews and any info were written by me.
+- Games that appears on this website is made up. Any actual games found outside of this is purely coincidental.
 
 ### Media
 - The logo and the simplified logo was made by me
