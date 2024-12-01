@@ -11,7 +11,7 @@ Lets also say the studio just collaborated with another developer to maintaining
 
 Within these 2 scenarios, I believe that the website will be able to achieve both goals for both users as the website acts as a portfolio while also giving the developer info of what they do and where they can contact them.
 
-Wireframe:
+Wireframe: https://www.figma.com/design/USrnL1NyQ9xM1MWw50I9EN/Asg-1-ID?node-id=0-1&node-type=canvas&t=jg5WJXsiB3Sdg78u-0
 
 ## Existing Features
 
