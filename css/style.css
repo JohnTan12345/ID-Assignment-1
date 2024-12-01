@@ -280,14 +280,14 @@ footer strong {
     gap: 10px
 }
 
-#socialmedia-icons {
+.socialmedia-icons {
     display: flex;
     flex-direction: row !important;
     justify-content: center;
     gap: 10px
 }
 
-#socialmedia-icons img{
+.socialmedia-icons img{
     height: 40px;
     width: 40px;
 }
